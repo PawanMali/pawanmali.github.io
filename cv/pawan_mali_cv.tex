@@ -1,0 +1,226 @@
+\documentclass[11pt,a4paper]{article}
+
+% -------------------------
+% Packages
+% -------------------------
+\usepackage[left=0.6in,right=0.6in,top=0.5in,bottom=0.5in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{charter}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{multicol}
+\usepackage{ragged2e}
+
+% -------------------------
+% Colors
+% -------------------------
+\definecolor{primary}{RGB}{26,61,96}
+\definecolor{accent}{RGB}{0,119,181}
+\definecolor{darktext}{RGB}{51,51,51}
+\definecolor{lighttext}{RGB}{102,102,102}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=primary,
+    urlcolor=accent
+}
+
+% -------------------------
+% Formatting
+% -------------------------
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+\titleformat{\section}
+  {\large\bfseries}
+  {}
+  {0em}
+  {\color{primary}}
+  [\vspace{-6pt}{\color{primary}\rule{\linewidth}{1pt}}]
+
+\titlespacing*{\section}{0pt}{14pt}{8pt}
+
+\renewcommand{\labelitemi}{\textcolor{primary}{\textbullet}}
+\setlist[itemize]{leftmargin=1.2em,itemsep=2pt,parsep=0pt,topsep=3pt}
+
+% Custom commands
+\newcommand{\cventry}[4]{%
+    \textbf{#1} \hfill \textcolor{lighttext}{#2} \\
+    \textit{\textcolor{darktext}{#3}} \hfill \textcolor{lighttext}{#4}
+}
+
+\newcommand{\cventrysingle}[3]{%
+    \textbf{#1} \hfill \textcolor{lighttext}{#2} \\
+    \textit{\textcolor{darktext}{#3}}
+}
+
+% -------------------------
+% Document
+% -------------------------
+\begin{document}
+
+% -------------------------
+% Header
+% -------------------------
+\begin{center}
+    {\LARGE\textcolor{primary}{\textbf{Pawan Rama Mali}}}
+
+    \vspace{8pt}
+
+    {\large\textcolor{darktext}{Research Scholar in Computer Science \& Engineering}}
+
+    \vspace{4pt}
+
+    {\textcolor{lighttext}{Lead R Shiny Developer \quad$\bullet$\quad Applied Analytics \quad$\bullet$\quad Clinical Data Systems}}
+
+    \vspace{10pt}
+
+    {\small
+    \textcolor{darktext}{Belagavi, Karnataka, India} \quad$\vert$\quad
+    \href{mailto:prm@outlook.in}{prm@outlook.in} \quad$\vert$\quad
+    \href{https://pawanmali.github.io}{pawanmali.github.io} \quad$\vert$\quad
+    \href{https://github.com/PawanRamaMali}{GitHub} \quad$\vert$\quad
+    \href{https://www.linkedin.com/in/pawanramamali}{LinkedIn}
+    }
+\end{center}
+
+\vspace{6pt}
+
+% -------------------------
+\section{Professional Summary}
+\textcolor{darktext}{Experienced Lead Developer and Research Scholar specializing in production-grade R Shiny applications and advanced analytical platforms. Expert in building scalable, regulatory-compliant solutions for clinical and healthcare analytics. Strong background in R and Python development, API integration, CI/CD-driven deployments, and automated testing. Proven track record of leading teams, mentoring developers, and delivering robust, maintainable, and user-centric analytical systems.}
+
+% -------------------------
+\section{Education}
+
+\cventry{Ph.D. in Computer Science \& Engineering}{Ongoing}{Indian Institute of Technology Dharwad}{Roll No: CS24DPX11}
+
+\vspace{2pt}
+{\small\textcolor{darktext}{CGPA: 8.58}}
+
+\vspace{3pt}
+{\small\textcolor{lighttext}{
+\textit{Coursework:} Statistical Pattern Recognition $\bullet$ Deep Learning $\bullet$ Pattern Recognition Lab $\bullet$ CSE Seminar
+}}
+
+\vspace{10pt}
+
+\cventry{M.Tech. in Artificial Intelligence}{2022}{REVA University}{86.7\% -- First Division with Distinction}
+
+\vspace{10pt}
+
+\cventry{B.Tech. in Aerospace Engineering}{2016}{Hindustan Aviation Academy, IGNOU}{72\% -- First Division}
+
+\vspace{10pt}
+
+{\textbf{Higher Secondary (12th)} \hfill \textcolor{lighttext}{CBSE -- 2011 -- 72\%}} \\
+{\textbf{Secondary (10th)} \hfill \textcolor{lighttext}{CBSE -- 2009 -- 90\%}}
+
+% -------------------------
+\section{Professional Experience}
+
+\cventry{Technical Consultant}{2024 -- Present}{Techworkslab}{}
+\begin{itemize}
+    \item Leading design and development of advanced R Shiny applications for enterprise and healthcare clients
+    \item Consulting on R and Python package development with emphasis on reusability, documentation, and testing
+    \item Implementing CDISC SDTM standards and regulatory-compliant clinical workflows in R
+    \item Designing scalable API integrations and championing CI/CD pipelines for automated deployment
+\end{itemize}
+
+\vspace{6pt}
+
+\cventry{R Shiny Developer}{2022 -- 2023}{Appsilon}{}
+\begin{itemize}
+    \item Developed and deployed production-grade R Shiny dashboards with focus on performance and UX
+    \item Built modular R packages and implemented robust automated testing frameworks
+    \item Integrated Shiny apps with external APIs and real-time data sources
+\end{itemize}
+
+\vspace{6pt}
+
+\cventry{Technical Lead}{2016 -- 2022}{AERODESIGN Solutions Pvt. Ltd.}{}
+\begin{itemize}
+    \item Led end-to-end development of data visualization and analytics frameworks using R and Python
+    \item Mentored development teams and designed automated pipelines for data processing and reporting
+\end{itemize}
+
+\vspace{6pt}
+
+\cventry{Data Analyst}{2013 -- 2014}{First Advantage}{}
+\begin{itemize}
+    \item Performed statistical analysis on large datasets and automated data collection workflows
+\end{itemize}
+
+% -------------------------
+\section{Technical Skills}
+
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+\textbf{Languages:} & R, Python, SQL, JavaScript \\[3pt]
+\textbf{Frameworks:} & R Shiny, Plumber, Flask, FastAPI, Django \\[3pt]
+\textbf{Analytics:} & Data Visualization, Statistical Modeling, Machine Learning, Deep Learning \\[3pt]
+\textbf{DevOps \& Tools:} & Docker, GitLab CI/CD, Git, Linux, PostgreSQL, MongoDB \\[3pt]
+\textbf{Standards:} & CDISC SDTM, ADaM, R Markdown, Knitr, Quarto
+\end{tabularx}
+
+% -------------------------
+\section{Selected Projects}
+
+\textbf{\textcolor{primary}{Clinical Trials Reporting System}} -- Designed R-based architectures for SDTM, ADaM, and TLG generation with automated report production using R Markdown and CI/CD pipelines.
+
+\vspace{6pt}
+
+\textbf{\textcolor{primary}{R Package Ecosystem}} -- Developed internal R packages including \textit{autotestpkg} for unit testing automation and \textit{Rmarker} for automated documentation.
+
+\vspace{6pt}
+
+\textbf{\textcolor{primary}{Healthcare Analytics Platform}} -- Built real-time dashboards using R Shiny and AWS with RESTful APIs for ML predictions.
+
+% -------------------------
+\section{Open Source Contributions}
+
+\textbf{\href{https://cran.r-project.org/package=shinypayload}{shinypayload}} -- \textit{CRAN Published R Package}
+\begin{itemize}
+    \item R package enabling seamless POST request integration into Shiny applications on the same port
+    \item Features: token-based authentication, reactive data streams, cross-session data sharing
+    \item Production-ready with 132 comprehensive tests and cross-platform compatibility
+\end{itemize}
+
+% -------------------------
+\section{Certifications \& Courses}
+
+\begin{multicols}{2}
+\textbf{\textcolor{primary}{DeepLearning.AI}}
+\begin{itemize}[itemsep=1pt]
+    \item Machine Learning Specialization
+    \item Deep Learning Specialization
+    \item NLP Specialization
+    \item TensorFlow Developer Certificate
+\end{itemize}
+
+\columnbreak
+
+\textbf{\textcolor{primary}{Professional \& LinkedIn}}
+\begin{itemize}[itemsep=1pt]
+    \item Project Management -- Vskills
+    \item AutoCAD Certified -- Autodesk
+    \item Deep Learning with Keras
+    \item AI for Cybersecurity
+\end{itemize}
+\end{multicols}
+
+% -------------------------
+\section{Research Interests}
+
+{\textcolor{darktext}{Deep Learning \quad$\bullet$\quad Computer Vision \quad$\bullet$\quad Machine Learning \quad$\bullet$\quad Natural Language Processing \quad$\bullet$\quad Pattern Recognition}}
+
+\vspace{10pt}
+
+\begin{center}
+\textcolor{lighttext}{\small References available upon request}
+\end{center}
+
+\end{document}
